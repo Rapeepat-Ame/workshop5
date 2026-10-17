@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฎนครปฐม</h1>
+        <p id="first">ยินดีต้อนรับ</p>
+        <p>นัหศึกษาจะได้เรียนรู้</p>
+        <p></p>
+        <p class="forth"></p>
+        <p></p>
+        <h1>Nakhon Pathom Rajabhat University</h1>
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczFnbGo2NDZmNGZrMGtwNGZzNHpsaGQ1dXA3Z3FwNHdnZ3dza295NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cbm0J4DEIqKHsKxYHA/giphy.gif">
+        <script>
+            const element = document.getElementById("first");
+            element.textContent += ("ยินดีต้อนรับสู่เว็บไซต์ของสาขาวิชา");
+            const element1 = document.querySelector("h1");
+            const element2 = document.querySelectorAll("p");
+            element2.forEach((paragraph) => {
+                paragraph.textContent = ("หลักสูตรวิทยาศาตร์บัณฑิต สาชาวิชาวิทยาการคอมพิวเตอร์");
+                paragraph.style.fontSize = ("20px");
+            })
+            element1.textContent = ("สาขาวิทยาการคอมพิวเตอร์");
+            element1.style.color = ("red");
+            
+            const element3 = document.querySelector(".forth");
+            element3.innerHTML = ("<strong>NPRU</strong>");
+
+            const element4 = document.querySelector("img");
+            element4.setAttribute("height", "300px")
+
+            element4.src = ("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Zm5jemR6Z252MzdmMjU1NWp6b2ZxY2k2d2QzOWU1djdpb29laW8xZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/G6TgcESZt8FFk8XV7K/giphy.gif");
+
+            const newH2 = document.createElement("h2");
+            newH2.textContent = ("MEOWW MEOW NIIII");
+            const newelem = document.body.appendChild(newH2);
+            newelem.remove();
+        </script>
+    </body>
+</html>
